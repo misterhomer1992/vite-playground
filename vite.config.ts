@@ -13,14 +13,14 @@ export default defineConfig({
     assetsInclude: ['**/*.gltf'],
     server: {
         origin: 'http://127.0.0.1:8000',
-        open: 'http://127.0.0.1:8000',
         hmr: false,
+        port: 6767,
     },
     resolve: {
         alias: {
             '@Dropdown': 'src/components/Dropdown'
         }
-    }
+    },
     // build: {
     //     manifest: true,
     //     rollupOptions: {
